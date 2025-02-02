@@ -1,7 +1,7 @@
 local keymap = vim.keymap
 
 keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
-keymap.set("n", "<leader>f", function() vim.lsp.buf.format() end)
+keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- Telescope
 keymap.set("n", "<leader>sf", require('telescope.builtin').find_files)
