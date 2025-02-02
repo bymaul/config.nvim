@@ -18,7 +18,7 @@ opt.expandtab = true
 opt.autoindent = true
 opt.breakindent = true
 
-if vim.fn.has('win32') == 1
- then
+if vim.fn.has('win32') == 1 or vim.fn.has('win64') == 1
+then
     vim.opt.shell = 'pwsh'
 end
