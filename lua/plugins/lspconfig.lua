@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
         config = function()
             require("mason-lspconfig").setup {
-                ensure_installed = { "lua_ls" }
+                ensure_installed = { "lua_ls", "ts_ls", "prettierd", "eslint_d", "tailwindcss" }
             }
         end,
     },
@@ -72,19 +72,25 @@ return {
                     }
                 end,
                 -- You can also specify custom setup for specific servers if needed
-                -- ["lua_ls"] = function()
-                --     lspconfig.lua_ls.setup {
-                --         capabilities = capabilities,
-                --         on_attach = on_attach,
-                --         settings = {
-                --             Lua = {
-                --                 diagnostics = {
-                --                     globals = { "vim" }
-                --                 }
-                --             }
-                --         }
-                --     }
-                -- end,
+                ["lua_ls"] = function()
+                    lspconfig.lua_ls.setup {
+                        capabilities = capabilities,
+                        on_attach = on_attach,
+                        settings = {
+                            Lua = {
+                                diagnostics = {
+                                    globals = { "vim" }
+                                }
+                            }
+                        }
+                    }
+                end,
+                ["emmet_ls"] = function()
+                    lspconfig["emmet_ls"].setup({
+                        capabilities = capabilities,
+                        filetypes = { "html", "typescriptreact", "javascriptreact", "blade", "css", "sass", "scss", "less" },
+                    })
+                end,
             }
         end,
     }
