@@ -1,4 +1,5 @@
 return {
+  'tpope/vim-sleuth',
   {
     'folke/lazydev.nvim',
     ft = 'lua',

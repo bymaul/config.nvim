@@ -1,7 +1,10 @@
-local keymap = vim.keymap
+local map = vim.keymap.set
 
-keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
-keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic Quickfix list' })
-keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+map('n', '<Esc>', '<cmd>nohlsearch<CR>')
+map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic Quickfix list' })
+map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
-keymap.set('n', '-', '<cmd>Oil<CR>', { desc = 'Open parent directory' })
+map('n', '-', '<cmd>Oil<CR>', { desc = 'Open parent directory' })
+
+map('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move line down' })
+map('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move line up' })
