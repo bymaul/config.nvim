@@ -5,6 +5,7 @@ return {
     local conform = require 'conform'
 
     conform.setup {
+      notify_on_error = false,
       formatters_by_ft = {
         javascript = { 'prettierd' },
         typescript = { 'prettierd' },
@@ -19,7 +20,8 @@ return {
       },
       format_on_save = {
         lsp_fallback = true,
-        async = true,
+        async = false,
+        timeout_ms = 5000,
       },
     }
   end,
