@@ -31,11 +31,6 @@ vim.schedule(function()
   opt.clipboard = 'unnamedplus'
 end)
 
--- Folding
-opt.foldmethod = 'expr'
-opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
-opt.foldlevel = 99
-
 -- Terminal
 opt.termguicolors = true
 
