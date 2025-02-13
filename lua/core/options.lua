@@ -34,5 +34,10 @@ end)
 -- Terminal
 opt.termguicolors = true
 
+-- Folding
+opt.foldmethod = 'expr'
+opt.foldexpr = 'nvim_treesitter#foldexpr()'
+opt.foldlevel = 99
+
 -- Shell selection
 opt.shell = vim.loop.os_uname().sysname:find 'Windows' and 'pwsh' or 'zsh'
