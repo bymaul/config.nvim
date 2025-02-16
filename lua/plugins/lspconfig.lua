@@ -62,8 +62,8 @@ return {
           filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'blade', 'css', 'sass', 'scss', 'less' },
         },
         tailwindcss = {},
-        intelephense = {},
         gopls = {},
+        -- intelephense = {} -- (Language: PHP),
       }
 
       local ensure_installed = vim.tbl_keys(servers or {})
@@ -71,8 +71,8 @@ return {
         'stylua',
         'eslint_d',
         'prettierd',
-        'pint',
-        'php-cs-fixer'
+        -- 'pint' -- (Language: PHP),
+        -- 'php-cs-fixer' -- (Language: PHP)
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
