@@ -19,11 +19,11 @@ return {
 
       map("]h", gs.next_hunk, "Next Hunk")
       map("[h", gs.prev_hunk, "Prev Hunk")
-      map("<leader>ghs", ":Gitsigns stage_hunk<CR>", "Stage Hunk")
-      map("<leader>ghr", ":Gitsigns reset_hunk<CR>", "Reset Hunk")
-      map("<leader>ghS", gs.stage_buffer, "Stage Buffer")
-      map("<leader>ghu", gs.undo_stage_hunk, "Undo Stage Hunk")
-      map("<leader>ghR", gs.reset_buffer, "Reset Buffer")
+      map("<leader>hs", ":Gitsigns stage_hunk<CR>", "[S]tage Hunk")
+      map("<leader>hr", ":Gitsigns reset_hunk<CR>", "[R]eset Hunk")
+      map("<leader>hS", gs.stage_buffer, "[Stage] Buffer")
+      map("<leader>hu", gs.undo_stage_hunk, "[U]ndo Stage Hunk")
+      map("<leader>hR", gs.reset_buffer, "[R]eset Buffer")
     end,
   },
 }
