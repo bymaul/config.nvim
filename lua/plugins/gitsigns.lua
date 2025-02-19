@@ -21,7 +21,7 @@ return {
       map("[h", gs.prev_hunk, "Prev Hunk")
       map("<leader>hs", ":Gitsigns stage_hunk<CR>", "[S]tage Hunk")
       map("<leader>hr", ":Gitsigns reset_hunk<CR>", "[R]eset Hunk")
-      map("<leader>hS", gs.stage_buffer, "[Stage] Buffer")
+      map("<leader>hS", gs.stage_buffer, "[S]tage Buffer")
       map("<leader>hu", gs.undo_stage_hunk, "[U]ndo Stage Hunk")
       map("<leader>hR", gs.reset_buffer, "[R]eset Buffer")
     end,

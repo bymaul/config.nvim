@@ -61,6 +61,7 @@ return {
         emmet_ls = {
           filetypes = { 'html', 'typescriptreact', 'javascriptreact', 'blade', 'css', 'sass', 'scss', 'less' },
         },
+        ts_ls = {},
         tailwindcss = {},
         gopls = {},
         -- intelephense = {}, -- (Language: PHP)
