@@ -9,7 +9,7 @@ opt.scrolloff = 10
 opt.cursorline = true
 opt.wrap = false
 opt.showmode = false
-opt.mouse = 'a'
+opt.mouse = "a"
 
 -- Searching
 opt.ignorecase = true
@@ -24,15 +24,15 @@ opt.undofile = true
 
 -- List characters
 opt.list = true
-opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 -- Clipboard
 vim.schedule(function()
-  opt.clipboard = 'unnamedplus'
+  opt.clipboard = "unnamedplus"
 end)
 
 -- Terminal
 opt.termguicolors = true
 
 -- Shell selection
-opt.shell = vim.loop.os_uname().sysname:find 'Windows' and 'pwsh' or 'zsh'
+opt.shell = vim.loop.os_uname().sysname:find "Windows" and "pwsh" or "zsh"

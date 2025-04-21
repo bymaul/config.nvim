@@ -1,16 +1,16 @@
 return {
-  'zbirenbaum/copilot.lua',
-  cmd = 'Copilot',
-  event = 'InsertEnter',
+  "zbirenbaum/copilot.lua",
+  cmd = "Copilot",
+  event = "InsertEnter",
   config = function()
-    require('copilot').setup {
+    require("copilot").setup {
       suggestion = {
         auto_trigger = true,
         keymap = {
-          accept = 'jl',
-          next = 'jk',
-          prev = 'jh',
-          dismiss = 'j;',
+          accept = "jl",
+          next = "jk",
+          prev = "jh",
+          dismiss = "j;",
         },
       },
       filetypes = {
@@ -18,9 +18,9 @@ return {
         markdown = true,
         help = true,
         gitcommit = true,
-        ['.'] = false,
+        ["."] = false,
       },
-      copilot_node_command = 'node',
+      copilot_node_command = "node",
     }
   end,
 }
