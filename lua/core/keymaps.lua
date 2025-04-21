@@ -2,6 +2,7 @@ local map = vim.keymap.set
 
 map('n', '<Esc>', '<cmd>nohlsearch<CR>')
 map('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+map('n', '<leader>ww', '<cmd>w<CR>', { desc = 'Save file' })
 map('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 map('n', '-', '<cmd>Oil<CR>', { desc = 'Open parent directory' })
