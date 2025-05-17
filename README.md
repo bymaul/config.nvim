@@ -1,5 +1,10 @@
 # config.nvim
 
+## Required
+
+- `git`, `make`, `unzip`, and C Compiler
+- `ripgrep`, `fd`
+
 ## Installation
 
 Linux and Mac
